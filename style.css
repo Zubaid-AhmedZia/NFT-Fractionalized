@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px; /* Adjust based on your layout needs */
+    margin: auto;
+}
+
+.wallet-interaction {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.connect-wallet-btn {
+    padding: 10px 20px;
+    background-color: #0d47a1; /* Button color */
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.connect-wallet-btn:hover {
+    background-color: #1976d2; /* Button hover color */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #76ff03;
+}
+
+.transfer-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    background-color: #333333;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #1976d2;
+}
+
+.info {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+#walletStatus {
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 150px;
+    text-align: center;
+  }
+  
+  .connected {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .disconnected {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  

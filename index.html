@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC404 Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="header">
+            <h1>ERC404 </h1>
+            <div class="wallet-interaction">
+                <div id="walletStatus" class="disconnected">Disconnected</div>
+                <button class="connect-wallet-btn" id="connectWallet" onclick="connectWallet()">Connect Wallet</button>
+            </div>
+        </div>
+    </div>
+        
+    <div class="container">
+        <h1>ERC404 Token Transfer</h1>
+        <div class="transfer-form">
+            <input type="text" id="tokenRecipient" placeholder="Enter recipient address">
+            <input type="text" id="token-amount" placeholder="Enter token amount">
+            <button id="transfer-btn" onclick="transfer()">Transfer Tokens</button>
+        </div>
+        <div class="info">
+            <h2>About ERC404</h2>
+            <p>ERC404 is a extension for ERC standards, focusing on the fractionalization of NFTs. It allows NFT owners to split their assets into smaller, tradable parts, enabling broader participation and liquidity in the NFT market. This approach not only democratizes access to high-value assets but also introduces new dynamics in the trading and utilization of NFTs. When the holder have a full token only then the holder will have 1 NFT minted on holder's address at the time of transfer of tokens.</p>
+        </div>
+    </div>
+    <script src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
